@@ -1,5 +1,5 @@
 <template>
-  <div class="app-circle">
+  <div class="mlui-circle">
     <svg viewBox="0 0 100 100">
       <defs v-if="isGradient">
         <linearGradient :id='id' x1="10%" y1="45%" x2="50%" y2="0%">
@@ -17,7 +17,7 @@
         :stroke-width="strokeWidth"
         fill-opacity="0" :style="pathStyle"/>
     </svg>
-    <div class="app-circle-content">
+    <div class="mlui-circle-content">
       <slot></slot>
     </div>
   </div>
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: 'a-circle',
+  name: 'm-circle',
   props: {
     strokeWidth: {
       type: Number,
@@ -57,7 +57,7 @@ export default {
     },
     id: {
       type: String,
-      default: 'app-circle-gradient'
+      default: 'mlui-circle-gradient'
     }
   },
   computed: {
@@ -90,12 +90,12 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.app-circle {
+.mlui-circle {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.app-circle-content {
+.mlui-circle-content {
   width: 100%;
   text-align: center;
   position: absolute;

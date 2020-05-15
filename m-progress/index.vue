@@ -1,12 +1,12 @@
 <template>
-  <div :class="['app-progress__bar',{ 'app-progress__bar--radius': radius }]">
-    <div class="app-progress__inner-bar" :style="{width: percent + '%'}"></div>
+  <div :class="['mlui-progress__bar',{ 'mlui-progress__bar--radius': radius }]">
+    <div class="mlui-progress__inner-bar" :style="{width: percent + '%'}"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "a-progress",
+  name: "m-progress",
   props: {
     percent: {
       type: Number,
@@ -22,16 +22,16 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/variable.less";
-.app-progress__bar {
+.mlui-progress__bar {
   background-color: @progress-bg-color;
   height: @progress-height;
-  &.app-progress__bar--radius,
-  &.app-progress__bar--radius .app-progress__inner-bar{
+  &.mlui-progress__bar--radius,
+  &.mlui-progress__bar--radius .mlui-progress__inner-bar{
     border-radius: 10000px;
   }
 }
 
-.app-progress__inner-bar {
+.mlui-progress__inner-bar {
   width: 0;
   height: 100%;
   background-color: @progress-color;

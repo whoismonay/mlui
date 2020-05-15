@@ -1,9 +1,9 @@
 <template>
   <div
-    class="app-flexbox"
+    class="mlui-flexbox"
     :class="{
-    'app-flex-col': orient === 'vertical',
-    'app-flex-row': orient === 'horizontal'
+    'mlui-flex-col': orient === 'vertical',
+    'mlui-flex-row': orient === 'horizontal'
   }"
     :style="styles"
   >
@@ -47,15 +47,15 @@ export default {
 </script>
 
 <style lang="less">
-.app-flexbox {
+.mlui-flexbox {
   width: 100%;
   text-align: left;
   display: flex;
   display: -webkit-flex;
   box-align: center;
   align-items: center;
-  .app-flexbox-item {
-    &:not(.app-flex-item--no-flex) {
+  .mlui-flexbox-item {
+    &:not(.mlui-flex-item--no-flex) {
       flex: 1;
       -webkit-flex: 1;
       min-width: 20px;
@@ -68,16 +68,16 @@ export default {
   }
 }
 
-.app-flex-row {
+.mlui-flex-row {
   box-direction: row;
   box-orient: horizontal;
   flex-direction: row;
 }
 
-.app-flex-col {
+.mlui-flex-col {
   box-orient: vertical;
   flex-direction: column;
-  > .app-flexbox-item {
+  > .mlui-flexbox-item {
     width: 100%;
   }
 }

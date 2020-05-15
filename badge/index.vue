@@ -1,7 +1,7 @@
 <template>
   <span
     v-text="text"
-    :class="['app-badge', {'app-badge-dot': typeof text === 'undefined', 'app-badge-single': typeof text !== 'undefined' && text.toString().length === 1}]"
+    :class="['mlui-badge', {'mlui-badge-dot': typeof text === 'undefined', 'mlui-badge-single': typeof text !== 'undefined' && text.toString().length === 1}]"
   ></span>
 </template>
 <script>
@@ -15,7 +15,7 @@ export default {
 <style lang="less" scoped>
 @import "~styles/variable.less";
 
-.app-badge {
+.mlui-badge {
   display: inline-block;
   text-align: center;
   background: @badge-bg-color;
@@ -28,11 +28,11 @@ export default {
   background-clip: padding-box;
   vertical-align: middle;
 }
-.app-badge-single {
+.mlui-badge-single {
   padding: 0;
   width: 16px;
 }
-.app-badge-dot {
+.mlui-badge-dot {
   height: auto;
   padding: 5px;
 }

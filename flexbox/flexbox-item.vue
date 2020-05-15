@@ -1,5 +1,5 @@
 <template>
-  <div :class="['app-flexbox-item', {'app-flex-item--no-flex': noFlex}]" :style="style">
+  <div :class="['mlui-flexbox-item', {'mlui-flex-item--no-flex': noFlex}]" :style="style">
     <slot></slot>
   </div>
 </template>

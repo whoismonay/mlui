@@ -1,23 +1,26 @@
-import Header from "./a-header"
+import MHeader from "./m-header"
 import Badge from "./badge"
 import Flexbox from "./flexbox/flexbox"
 import FlexboxItem from "./flexbox/flexbox-item"
-import ACircle from "./a-circle"
-import AProgress from "./a-progress"
+import MCircle from "./m-circle"
+import MProgress from "./m-progress"
+import MVideo from "./m-video"
 
 export default {
     install: function(Vue){
-        Vue.component('AHeader', Header)
+        Vue.component('MHeader', MHeader)
         Vue.component('Badge', Badge)
         Vue.component('Flexbox', Flexbox)
         Vue.component('FlexboxItem', FlexboxItem)
-        Vue.component('ACircle', ACircle)
-        Vue.component('AProgress', AProgress)
+        Vue.component('MCircle', MCircle)
+        Vue.component('MProgress', MProgress)
+        Vue.component('MVideo', MVideo)
     },
-    Header,
+    MHeader,
     Badge,
     Flexbox,
     FlexboxItem,
-    ACircle,
-    AProgress
+    MCircle,
+    MProgress,
+    MVideo
 }
